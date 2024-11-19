@@ -1,0 +1,20 @@
+<header class="w-100 position-sticky top-0 py-3 px-3 bg-primary row m-auto align-items-center">
+    <div class="col-9">
+        <span class="text-white"><img class="app-logo" src="Notas-logo.png"/> </span>
+    </div>
+    <nav class="bg-dark" [class.active]="showNav">
+        <a class="text-white d-block mb-2 text-decoration-none">Inicio</a>
+        <a class="text-white d-block mb-2 text-decoration-none">Lista de tareas</a>
+        <a class="text-white d-block text-decoration-none">Contacto</a>
+
+        <button type="button" class="btn position-absolute" (click)="toggleNav()">
+            <i class="bi bi-x-lg  text-white"></i>
+        </button>
+
+    </nav>
+    <div class="col-3 text-end">
+        <button type="button" class="btn btn-secondary" (click)="toggleNav()">
+            <i class="bi bi-list"></i>
+        </button>
+    </div>
+</header>
