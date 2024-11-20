@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-login',
@@ -7,10 +8,12 @@ import { Component } from '@angular/core';
 })
 export class LoginComponent {
 
-  inicio: boolean = false;
+  constructor(private router: Router) {}
 
-  toggleInicio(): void {
-    this.inicio = !this.inicio;
-  }
+    enviarInicio(){
+    this.router.navigate(['/app/inicio']);
+    }
+
+
 
 }
