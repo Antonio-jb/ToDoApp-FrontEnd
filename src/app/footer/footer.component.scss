@@ -1,8 +1,15 @@
-.nueva-nota {
-  width: 50px;
+.boton-nuevaNota{
+  width: 60px;
   height: 50px;
+  background-color: transparent;
+  border: none;
+  color: white;
 }
 
 .guardado-nube {
   margin-left: 15px;
+}
+
+.agregarNota {
+  font-size: 37px;
 }

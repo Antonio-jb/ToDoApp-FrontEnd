@@ -4,6 +4,7 @@ import {LoginComponent} from "./login/login.component";
 import {LayoutSinHeaderComponent} from "./layout-sin-header/layout-sin-header.component";
 import {LayoutConHeaderComponent} from "./layout-con-header/layout-con-header.component";
 import {InicioComponent} from "./inicio/inicio.component";
+import {NotaNuevaComponent} from "./nota-nueva/nota-nueva.component";
 
 const routes: Routes = [
   {
@@ -14,7 +15,8 @@ const routes: Routes = [
     ]
 },
   {path: "app", component: LayoutConHeaderComponent, children: [
-      {path: "inicio", component: InicioComponent}
+      {path: "inicio", component: InicioComponent},
+          {path: "nota_nueva", component: NotaNuevaComponent}
     ]},
     {path: "**", component: LoginComponent}
 ];

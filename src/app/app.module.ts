@@ -10,6 +10,7 @@ import { LoginComponent } from './login/login.component';
 import { LayoutConHeaderComponent } from './layout-con-header/layout-con-header.component';
 import { LayoutSinHeaderComponent } from './layout-sin-header/layout-sin-header.component';
 import { InicioComponent } from './inicio/inicio.component';
+import { NotaNuevaComponent } from './nota-nueva/nota-nueva.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { InicioComponent } from './inicio/inicio.component';
     LoginComponent,
     LayoutConHeaderComponent,
     LayoutSinHeaderComponent,
-    InicioComponent
+    InicioComponent,
+    NotaNuevaComponent
   ],
     imports: [
         BrowserModule,
