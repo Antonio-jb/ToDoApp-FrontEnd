@@ -1,0 +1,40 @@
+<div class="container w-100 bg-black">
+    <div class="m-0 w-100 py-4 px-4 bg-black text-white h-100 overflow-auto row justify-content-center">
+        <div class="col-12 m-auto mt-5">
+            <img src="Notas-logo.png" class="mx-auto d-block ">
+        </div>
+        <div>
+            <p class="text-center"><u>Introduzca un usuario y contraseña nuevos</u></p>
+        </div>
+
+        <form [formGroup]="formularioRegistro" (ngSubmit)="onSubmit()" class="col-12 mb-5">
+            <div class="form-group">
+                <label class="form-label mb-3" for="username">Usuario o Correo Electrónico</label>
+                <input type="email" class="form-control p-3 mb-5" id="username" formControlName="username" placeholder="Usuario/Email" required>
+                <div *ngIf="formularioRegistro.get('username')?.invalid && formularioRegistro.get('username')?.touched" class="text-danger">
+                    El correo electrónico es obligatorio y debe ser válido (minimo 4 caracteres).
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="form-label mt-3 mb-3" for="password">Contraseña</label>
+                <input type="password" class="form-control p-3 mb-5" id="password" formControlName="password" placeholder="Contraseña" required>
+                <div *ngIf="formularioRegistro.get('password')?.invalid && formularioRegistro.get('password')?.touched" class="text-danger mb-3">
+                    La contraseña es obligatoria y debe tener al menos 4 caracteres.
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="form-label mt-3 mb-3" for="confirmPassword">Confirmar Contraseña</label>
+                <input type="password" class="form-control p-3 mb-5" id="confirmPassword" formControlName="confirmPassword" placeholder="Confirmar Contraseña" required>
+                <div *ngIf="formularioRegistro.get('confirmPassword')?.invalid && formularioRegistro.get('confirmPassword')?.touched" class="text-danger mb-3">
+                    La confirmación es obligatoria y ambas deben coincidir.
+                </div>
+            </div>
+            <button type="submit" class="btn btn-success mt-3 p-4 position-absolute" [disabled]="formularioRegistro.invalid">Registrar</button>
+            <div class="text-center mb-5">
+                ¿Ya tienes una cuenta? <a (click)="enviarALogin()" class="text-white">Inicia sesión.</a>
+            </div>
+        </form>
+    </div>
+</div>

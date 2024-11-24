@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -13,6 +14,7 @@ import { InicioComponent } from './inicio/inicio.component';
 import { NotaNuevaComponent } from './nota-nueva/nota-nueva.component';
 import { NotaFooterComponent } from './nota-footer/nota-footer.component';
 import { NotaAbiertaComponent } from './nota-abierta/nota-abierta.component';
+import { RegistroComponent } from './registro/registro.component';
 
 @NgModule({
   declarations: [
@@ -25,12 +27,14 @@ import { NotaAbiertaComponent } from './nota-abierta/nota-abierta.component';
     InicioComponent,
     NotaNuevaComponent,
     NotaFooterComponent,
-    NotaAbiertaComponent
+    NotaAbiertaComponent,
+    RegistroComponent
   ],
     imports: [
         BrowserModule,
         AppRoutingModule,
-        NgbModule
+        NgbModule,
+        ReactiveFormsModule
     ],
   providers: [],
   bootstrap: [AppComponent]

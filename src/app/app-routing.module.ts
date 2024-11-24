@@ -6,13 +6,15 @@ import {LayoutConHeaderComponent} from "./layout-con-header/layout-con-header.co
 import {InicioComponent} from "./inicio/inicio.component";
 import {NotaNuevaComponent} from "./nota-nueva/nota-nueva.component";
 import {NotaAbiertaComponent} from "./nota-abierta/nota-abierta.component";
+import {RegistroComponent} from "./registro/registro.component";
 
 const routes: Routes = [
   {
       path: "",
       component: LayoutSinHeaderComponent,
       children: [
-        {path: "", component: LoginComponent}
+        {path: "login", component: LoginComponent},
+          {path: "registro", component: RegistroComponent}
     ]
 },
   {path: "app", component: LayoutConHeaderComponent, children: [
