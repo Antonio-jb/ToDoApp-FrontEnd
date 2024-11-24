@@ -2,11 +2,11 @@ import { Component } from '@angular/core';
 import {Router} from "@angular/router";
 
 @Component({
-  selector: 'app-nota-nueva',
-  templateUrl: './nota-nueva.component.html',
-  styleUrl: './nota-nueva.component.scss'
+  selector: 'app-nota-abierta',
+  templateUrl: './nota-abierta.component.html',
+  styleUrl: './nota-abierta.component.scss'
 })
-export class NotaNuevaComponent {
+export class NotaAbiertaComponent {
 
   constructor(private router: Router) {}
 
@@ -19,4 +19,5 @@ export class NotaNuevaComponent {
   toggleNav() {
     this.showNav = !this.showNav;
   }
+
 }

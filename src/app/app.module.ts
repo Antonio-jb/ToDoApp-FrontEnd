@@ -11,6 +11,8 @@ import { LayoutConHeaderComponent } from './layout-con-header/layout-con-header.
 import { LayoutSinHeaderComponent } from './layout-sin-header/layout-sin-header.component';
 import { InicioComponent } from './inicio/inicio.component';
 import { NotaNuevaComponent } from './nota-nueva/nota-nueva.component';
+import { NotaFooterComponent } from './nota-footer/nota-footer.component';
+import { NotaAbiertaComponent } from './nota-abierta/nota-abierta.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,9 @@ import { NotaNuevaComponent } from './nota-nueva/nota-nueva.component';
     LayoutConHeaderComponent,
     LayoutSinHeaderComponent,
     InicioComponent,
-    NotaNuevaComponent
+    NotaNuevaComponent,
+    NotaFooterComponent,
+    NotaAbiertaComponent
   ],
     imports: [
         BrowserModule,
