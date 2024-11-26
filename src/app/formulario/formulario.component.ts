@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import {FormBuilder, FormControl, FormGroup, Validators} from "@angular/forms";
-import {EstadoService} from "../estado.service";
-import {EstadoFiltroService} from "../estado-filtro.service";
+import {EstadoService} from "../services/estado.service";
+import {EstadoFiltroService} from "../services/estado-filtro.service";
 
 @Component({
   selector: 'app-formulario',

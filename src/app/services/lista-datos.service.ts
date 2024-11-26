@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import {BehaviorSubject, Observable} from "rxjs";
-import {ListaDatos} from "./lista-datos/lista-datos";
+import {ListaDatos} from "./interfaces/lista-datos";
 
 @Injectable({
   providedIn: 'root'

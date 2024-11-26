@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from "@angular/router";
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
-import {EstadoService} from "../estado.service";
+import {EstadoService} from "../services/estado.service";
 
 @Component({
   selector: 'app-login',

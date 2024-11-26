@@ -1,0 +1,22 @@
+<form [formGroup]="formulario" (submit)="addPersona()" class="w-75 m-auto mt-4 mb-4 py-3 px-3 rounded-3 shadow-sm row justify-content-center row-gap-3">
+    <div class="col-11">
+        <span>Introduzca nombre:</span>
+        <input type="text" placeholder="nombre" class="form-control" formControlName="nombre">
+    </div>
+    <div class="col-11">
+        <span>Introduzca edad:</span>
+        <input type="number" placeholder="edad" class="form-control" formControlName="edad">
+    </div>
+    <div class="text-end">
+        <button type="submit" class="btn btn-secondary">Añadir</button>
+    </div>
+</form>
+
+<div class="row justify-content-around gap-3 text-center ">
+    <div class="col-4 rounded-3 shadow-sm py-4 px-3" *ngFor="let persona of personas">
+        <p class="mb-2"><u>nombre:</u></p>
+        <p class="small mb-4 text-muted fw-bold">{{ persona.nombre }}</p>
+        <p class="mb-2"><u>edad:</u></p>
+        <p class="small text-muted fw-bold">{{ persona.edad }} años</p>
+    </div>
+</div>

@@ -18,9 +18,9 @@ import { RegistroComponent } from './registro/registro.component';
 import { BotonExamenComponent } from './boton-examen/boton-examen.component';
 import { ListaTareasExamenComponent } from './lista-tareas-examen/lista-tareas-examen.component';
 import {NgForOf, NgIf} from "@angular/common";
-import { ListaDatosComponent } from './lista-datos/lista-datos.component';
 import { DetallesTareaExamenComponent } from './detalles-tarea-examen/detalles-tarea-examen.component';
 import { FormularioComponent } from './formulario/formulario.component';
+import { TrabajandoConArraysComponent } from './trabajando-con-arrays/trabajando-con-arrays.component';
 
 @NgModule({
   declarations: [
@@ -37,9 +37,9 @@ import { FormularioComponent } from './formulario/formulario.component';
     RegistroComponent,
     BotonExamenComponent,
     ListaTareasExamenComponent,
-    ListaDatosComponent,
     DetallesTareaExamenComponent,
-    FormularioComponent
+    FormularioComponent,
+    TrabajandoConArraysComponent
   ],
   imports: [
     BrowserModule,

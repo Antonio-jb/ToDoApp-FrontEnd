@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 import { ListaTareasExamenComponent} from "../lista-tareas-examen/lista-tareas-examen.component";
 import {Router} from "@angular/router";
-import {ListaDatosService} from "../lista-datos.service";
-import {ListaDatos} from "../lista-datos/lista-datos";
+import {ListaDatosService} from "../services/lista-datos.service";
+import {ListaDatos} from "../services/interfaces/lista-datos";
 
 @Component({
   selector: 'app-detalles-tarea-examen',

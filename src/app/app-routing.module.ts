@@ -9,6 +9,7 @@ import {NotaAbiertaComponent} from "./nota-abierta/nota-abierta.component";
 import {RegistroComponent} from "./registro/registro.component";
 import {ListaTareasExamenComponent} from "./lista-tareas-examen/lista-tareas-examen.component";
 import {DetallesTareaExamenComponent} from "./detalles-tarea-examen/detalles-tarea-examen.component";
+import {TrabajandoConArraysComponent} from "./trabajando-con-arrays/trabajando-con-arrays.component";
 
 const routes: Routes = [
   {
@@ -24,7 +25,8 @@ const routes: Routes = [
           {path: "nota_nueva", component: NotaNuevaComponent},
               {path: "nota", component: NotaAbiertaComponent},
                   {path: "lista", component: ListaTareasExamenComponent},
-          {path: "detalles-tarea", component: DetallesTareaExamenComponent}
+                     {path: "detalles-tarea", component: DetallesTareaExamenComponent},
+                        {path: "arrays", component: TrabajandoConArraysComponent},
     ]},
     {path: "**", component: LoginComponent}
 ];

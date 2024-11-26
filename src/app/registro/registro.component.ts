@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from "@angular/router";
-import {EstadoService} from "../estado.service";
+import {EstadoService} from "../services/estado.service";
 import {FormBuilder, FormGroup, Validators} from "@angular/forms";
 
 @Component({

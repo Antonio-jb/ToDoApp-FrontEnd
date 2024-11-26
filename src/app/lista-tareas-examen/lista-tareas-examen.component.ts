@@ -1,10 +1,10 @@
 import {Component, OnInit} from '@angular/core';
-import {ListaDatosService} from "../lista-datos.service";
+import {ListaDatosService} from "../services/lista-datos.service";
 import {Router} from "@angular/router";
-import {ListaDatos} from "../lista-datos/lista-datos";
+import {ListaDatos} from "../services/interfaces/lista-datos";
 import {FormGroup} from "@angular/forms";
-import {EstadoService} from "../estado.service";
-import {EstadoFiltroService} from "../estado-filtro.service";
+import {EstadoService} from "../services/estado.service";
+import {EstadoFiltroService} from "../services/estado-filtro.service";
 
 @Component({
   selector: 'app-lista-tareas-examen',
@@ -62,6 +62,7 @@ export class ListaTareasExamenComponent implements OnInit {
     }];
 
   enviarDatos(item: ListaDatos) {
+    this.listaDatosService.setDatos(item);
     this.router.navigate(['/app/detalles-tarea']);
   }
 
