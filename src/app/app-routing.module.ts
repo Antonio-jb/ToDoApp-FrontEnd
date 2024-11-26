@@ -7,20 +7,24 @@ import {InicioComponent} from "./inicio/inicio.component";
 import {NotaNuevaComponent} from "./nota-nueva/nota-nueva.component";
 import {NotaAbiertaComponent} from "./nota-abierta/nota-abierta.component";
 import {RegistroComponent} from "./registro/registro.component";
+import {ListaTareasExamenComponent} from "./lista-tareas-examen/lista-tareas-examen.component";
+import {DetallesTareaExamenComponent} from "./detalles-tarea-examen/detalles-tarea-examen.component";
 
 const routes: Routes = [
   {
       path: "",
       component: LayoutSinHeaderComponent,
       children: [
-        {path: "login", component: LoginComponent},
+        {path: "", component: LoginComponent},
           {path: "registro", component: RegistroComponent}
     ]
 },
   {path: "app", component: LayoutConHeaderComponent, children: [
       {path: "inicio", component: InicioComponent},
           {path: "nota_nueva", component: NotaNuevaComponent},
-              {path: "nota", component: NotaAbiertaComponent}
+              {path: "nota", component: NotaAbiertaComponent},
+                  {path: "lista", component: ListaTareasExamenComponent},
+          {path: "detalles-tarea", component: DetallesTareaExamenComponent}
     ]},
     {path: "**", component: LoginComponent}
 ];

@@ -25,14 +25,15 @@ export class RegistroComponent {
   onSubmit() {
     if (this.formularioRegistro.valid) {
       console.log('Usuario registrado:', this.formularioRegistro.value);
+      alert("Usuario registrado");
 
       this.estadoServicio.actualizarRegistro(true);
-      this.router.navigate(['login']);
+      this.router.navigate(['/']);
     }
   }
 
   enviarALogin() {
-    this.router.navigate(['login'])
+    this.router.navigate(['/'])
   }
 }
 

@@ -37,7 +37,8 @@ export class LoginComponent implements OnInit {
     if (this.estaRegistrado) {
       this.router.navigate(['/app/inicio']);
     } else {
-      console.log("Usuario no registrado.")
+      console.log("Usuario no registrado.");
+      alert("Usuario no registrado.");
     }
   }
 

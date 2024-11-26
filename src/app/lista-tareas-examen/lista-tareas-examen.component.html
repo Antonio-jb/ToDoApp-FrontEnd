@@ -1,0 +1,22 @@
+<app-formulario></app-formulario>
+<div class="container">
+<div class="card-title fs-2 fw-bold mb-3">Lista de Tareas</div>
+
+<div id="contenedor-lista" class="containerLista row gap-3 justify-content-center">
+    <div class=" col-3 shadow-sm py-4 px-3 rounded-3 cuadrado-lista" *ngFor="let lista of listas">
+        <div *ngIf="estado == 'todos' || estado == '' || estado == lista.estado">
+
+        <!--<p>ID: {{ lista.id }}</p>-->
+        <p><b>Nombre:</b> {{ lista.nombre }}</p>
+        <!--<p>Descripción: {{ lista.descripcion }}</p>-->
+        <p><b>Estado:</b> {{ lista.estado }}</p>
+        <a class="btn text-end tareaDatos text-decoration-underline"
+           (click)="enviarDatos(lista)"><i>Ver mas.</i></a>
+
+        </div>
+    </div>
+</div>
+</div>
+
+
+<app-footer></app-footer>
